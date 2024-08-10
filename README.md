@@ -51,13 +51,11 @@ _Include a comprehensive summary of all important information about your project
 All necessary code files and any additional information required to judge your project solution should be included in the repository. 
 
 ### Our project topic is "Exponential quantum speedup in simulating coupled classical oscillators"
-As a first step, we have implemented the toy problem with the most non-trivial 1D coupled oscillator system with N=2 masses. We have considered mass and spring constants as identity matrices which still encode the key algorithm building blocks from the reference paper. This implementation is scalable and resource estimation regarding circuit depth and circuit width
-and number of 1 and 2-qubit gates. We have created a VQE algorithm to estimate the minimum energy (eigenvalue) of the Hamiltonian as well. The implementation is post-processed for the outcome using the Classiq simulator. The file for the toy problem is toyproblem.ipynb [here](https://github.com/ShamaritaDeb/Development-of-Novel-Quantum-Algorithms/blob/41cf1e63aaacec470dbe07132c8ab0e1decd3cc2/toyproblem.ipynb)
+As a first step, we have implemented the toy problem with the most non-trivial 1D coupled oscillator system with N=2 masses. We have considered mass and spring constants as identity matrices which still encode the key algorithm building blocks from the reference paper. This implementation is scalable and resource estimation regarding circuit depth and circuit width and number of 1 and 2-qubit gates. We have created a VQE algorithm to estimate the minimum energy (eigenvalue) of the Hamiltonian as well. The implementation is post-processed for the outcome using the Classiq simulator. The file for the toy problem is toyproblem.ipynb [here](https://github.com/ShamaritaDeb/Development-of-Novel-Quantum-Algorithms/blob/41cf1e63aaacec470dbe07132c8ab0e1decd3cc2/toyproblem.ipynb)
 
-In the next step, we have enlarged the problem to add more degrees of freedom for parameter values. 
-For mass M Parameters:
-    - N: Number of masses (size of the matrix NxN 
-).
+In the next step, we have enlarged the problem to add more degrees of freedom for parameter values. <br>
+For mass M Parameters:<br>
+    - N: Number of masses (size of the matrix NxN).
     - masses: List or array of mass values for the diagonal elements.
     - coupling: Optional matrix of coupling terms (off-diagonal elements). 
     For spring constant K parameters:
