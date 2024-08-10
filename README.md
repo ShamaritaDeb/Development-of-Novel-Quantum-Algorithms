@@ -56,7 +56,7 @@ and number of 1 and 2-qubit gates. We have created a VQE algorithm to estimate t
 
 In the next step, we have enlarged the problem to add more degrees of freedom for parameter values. 
 For mass M Parameters:
-    - N: Number of masses (size of the matrix N \times N \text{ matrix}
+    - N: Number of masses (size of the matrix N \times N 
 ).
     - masses: List or array of mass values for the diagonal elements.
     - coupling: Optional matrix of coupling terms (off-diagonal elements). 
@@ -66,9 +66,8 @@ For mass M Parameters:
     - boundary_constant: Default value for the springs connected to the walls (k<sub>0</sub> and k<sub>N</sub>).
     - custom_spring_constants: List of custom values for internal spring constants [k<sub>1</sub>, k<sub>2</sub>, ..., k<sub>N-1</sub>].
     - custom_boundary_constants: List of custom values for boundary spring constants [k<sub>0</sub>, k<sub>N</sub>].
-    -size of the matrix $$
-N \times N \text{ matrix}
-$$
+    -size of the matrix
+N \times N
     This offers us scalability and the advantage of expanding the coupled oscillator system for the desired set of mass and connecting springs. The resource estimation is done regarding circuit depth, circuit width and number of 1 and 2-qubit gates. Like the previous step, we have created a VQE algorithm to estimate the minimum energy (eigenvalue) of the Hamiltonian. The implementation is post-processed for the outcome using the Classiq simulator. The file for the complicated scenario is enlargedproblem.ipynb
 
 ### Project Presentation Deck:
