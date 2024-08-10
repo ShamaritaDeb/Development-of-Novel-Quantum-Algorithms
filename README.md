@@ -49,7 +49,24 @@ Team Member 3:
 ### Project Solution:
 _Include a comprehensive summary of all important information about your project solution here._
 All necessary code files and any additional information required to judge your project solution should be included in the repository. 
-Our project topic is "Exponential quantum speedup in simulating coupled classical oscillators". 
+
+### Our project topic is "Exponential quantum speedup in simulating coupled classical oscillators"
+As a first step, we have implemented the toy problem with the most non-trivial 1D coupled oscillator system with N=2 masses. We have considered mass and spring constants as identity matrices which still encode the key algorithm building blocks from the reference paper. This implementation is scalable and resource estimation regarding circuit depth and circuit width
+and number of 1 and 2-qubit gates. We have created a VQE algorithm to estimate the minimum energy (eigenvalue) of the Hamiltonian as well. The implementation is post-processed for the outcome using the Classiq simulator. The file for the toy problem is toyproblem.ipynb
+
+In the next step, we have enlarged the problem to add more degrees of freedom for parameter values. 
+For mass M Parameters:
+    - N: Number of masses (size of the matrix NxN).
+    - masses: List or array of mass values for the diagonal elements.
+    - coupling: Optional matrix of coupling terms (off-diagonal elements). 
+    For spring constant K parameters:
+    - N: Number of oscillators (masses).
+    - spring_constant: Default value for all internal spring constants (k1, k2, ..., kN-1).
+    - boundary_constant: Default value for the springs connected to the walls (k0 and kN).
+    - custom_spring_constants: List of custom values for internal spring constants [k1, k2, ..., kN-1].
+    - custom_boundary_constants: List of custom values for boundary spring constants [k0, kN].
+    -size of the matrix NxN
+    This offers us scalability and the advantage of expanding the coupled oscillator system for the desired set of mass and connecting springs. The resource estimation is done regarding circuit depth, circuit width and number of 1 and 2-qubit gates. Like the previous step, we have created a VQE algorithm to estimate the minimum energy (eigenvalue) of the Hamiltonian. The implementation is post-processed for the outcome using the Classiq simulator. The file for the complicated scenario is enlargedproblem.ipynb
 
 ### Project Presentation Deck:
 _Upload/ Link a 3min. presentation deck here._
