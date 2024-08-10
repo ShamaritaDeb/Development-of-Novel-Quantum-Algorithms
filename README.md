@@ -49,6 +49,7 @@ Team Member 3:
 ### Project Solution:
 _Include a comprehensive summary of all important information about your project solution here._
 All necessary code files and any additional information required to judge your project solution should be included in the repository. 
+Our project topic is "Exponential quantum speedup in simulating coupled classical oscillators". 
 
 ### Project Presentation Deck:
 _Upload/ Link a 3min. presentation deck here._
