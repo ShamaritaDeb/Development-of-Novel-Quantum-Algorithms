@@ -68,7 +68,7 @@ For mass M Parameters:
     - custom_boundary_constants: List of custom values for boundary spring constants [k<sub>0</sub>, k<sub>N</sub>].
     -size of the matrix
 NxN
-    This offers us scalability and the advantage of expanding the coupled oscillator system for the desired set of mass and connecting springs. The resource estimation is done regarding circuit depth, circuit width and number of 1 and 2-qubit gates. Like the previous step, we have created a VQE algorithm to estimate the minimum energy (eigenvalue) of the Hamiltonian. The implementation is post-processed for the outcome using the Classiq simulator. The file for the complicated scenario is enlargedproblem.ipynb [here] https://github.com/ShamaritaDeb/Development-of-Novel-Quantum-Algorithms/blob/a9c95011a6ca86763cbd7678255b47e30dbc1e3a/enlargedproblem.ipynb
+    This offers us scalability and the advantage of expanding the coupled oscillator system for the desired set of mass and connecting springs. The resource estimation is done regarding circuit depth, circuit width and number of 1 and 2-qubit gates. Like the previous step, we have created a VQE algorithm to estimate the minimum energy (eigenvalue) of the Hamiltonian. The implementation is post-processed for the outcome using the Classiq simulator. The file for the complicated scenario is enlargedproblem.ipynb [here] (https://github.com/ShamaritaDeb/Development-of-Novel-Quantum-Algorithms/blob/a9c95011a6ca86763cbd7678255b47e30dbc1e3a/enlargedproblem.ipynb)
 
 ### Project Presentation Deck:
 _Upload/ Link a 3min. presentation deck here._
