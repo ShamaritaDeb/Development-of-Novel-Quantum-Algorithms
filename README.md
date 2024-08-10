@@ -61,7 +61,7 @@ For mass M Parameters:
     - coupling: Optional matrix of coupling terms (off-diagonal elements). 
     For spring constant K parameters:
     - N: Number of oscillators (masses).
-    - spring_constant: Default value for all internal spring constants (k1, k2, ..., kN-1).
+    - spring_constant: Default value for all internal spring constants (k<sub>1</sub>, k2, ..., kN-1).
     - boundary_constant: Default value for the springs connected to the walls (k0 and kN).
     - custom_spring_constants: List of custom values for internal spring constants [k1, k2, ..., kN-1].
     - custom_boundary_constants: List of custom values for boundary spring constants [k0, kN].
